@@ -3,10 +3,10 @@ x-data="{ isOpen: false }"
 class="absolute inset-x-0 top-0 z-50">
 <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-        <a href="#" class="-m-1.5 p-1.5">
+        <a href="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            <img class="h-[45px] w-auto"
+                src="{{ asset('img/Hagios-Kids-Logo.svg') }}" alt="">
         </a>
     </div>
     <div class="flex lg:hidden">
@@ -149,7 +149,7 @@ class="absolute inset-x-0 top-0 z-50">
         <a href="#" class="text-sm/6 font-semibold text-gray-900">Company</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="/login" class="text-sm/6 font-semibold text-gray-900">Log in <span
+        <a href="/auth/login" class="text-sm/6 font-semibold text-gray-900">Log in <span
                 aria-hidden="true">&rarr;</span></a>
     </div>
 </nav>
@@ -225,7 +225,7 @@ class="absolute inset-x-0 top-0 z-50">
                         class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
                 </div>
                 <div class="py-6">
-                    <a href="/login"
+                    <a href="/auth/login"
                         class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log
                         in</a>
                 </div>
