@@ -12,7 +12,10 @@
             <p>User Type: {{ Auth::user()->user_type }}</p>
             <p>Your WhatsApp Phone Number: {{ Auth::user()->wa_phone_number }}</p>
 
-            <a href="{{ route('logout') }}" class="mt-4 text-red-600">Logout</a>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button class="mt-4 text-red-600" type="submit">Logout</button>
+            </form>
         </div>
     </div>
 </body>

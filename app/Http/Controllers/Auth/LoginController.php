@@ -35,4 +35,10 @@ class LoginController extends Controller
             'error' => 'The provided credentials do not match our records.',
         ]);
     }
+
+    public function logout(Request $request)
+    {
+        Auth::logout(); // Log the user out
+        return redirect('/login')->with('message', 'You have been logged out.');
+    }
 }
