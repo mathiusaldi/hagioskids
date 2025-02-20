@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('wa_phone_number')->unique(); // WA phone number
             $table->string('password');
             $table->enum('user_type', ['admin', 'user', 'teacher', 'student']);
+            $table->string('class')->nullable();
             $table->timestamps();
         });
 
